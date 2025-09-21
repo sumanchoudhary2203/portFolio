@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="login_wallpaper1.jpg" class="d-block w-100" alt="...">
+                    <img src="login_wallpaper.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
                         <h5>PHP Login Form</h5>
                         <p>A PHP project that allows users to register, display, update, and delete records using a MySQL database. Includes form validation and styled table display..</p>
@@ -337,7 +337,7 @@ emerging technologies.
                     <div class="card" data-aos="zoom-in-down" data-aos-offset="200">
                         <div class="card-body">
                             <img src="
-coffee-hero-section.png.jpg"
+coffee-hero-section.png."
                                 class="img-fluid rounded-circle border border-primary p-2" alt="">
                             <h5 class="card-title">Coffee Shop</h5>
                             <p class="card-text">Responsive Website with HTML, CSS & JS</p>
@@ -452,10 +452,18 @@ coffee-hero-section.png.jpg"
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+         function updateTime() {
+        const now = new Date();
+        document.getElementById("time").textContent =
+        "Time: " + now.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
     </script>
 </body>
 
 </html>
+
 
 
 
